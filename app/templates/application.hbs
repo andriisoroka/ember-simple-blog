@@ -1,3 +1,25 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="row">
+    <div class="col m2 s12 light-blue darken-1 custom-menu">
+        <div class="top-img">
+            <img src="https://avatars3.githubusercontent.com/u/125005?v=3&s=100">
+        </div>
+        <ul class="collection">
+            <li class="collection-item">
+              {{#link-to 'main'}}Main{{/link-to}}
+            </li>
+            <li class="collection-item">
+            {{#link-to 'users'}}Users{{/link-to}}
+          </li>
+          <li class="collection-item">
+            {{#link-to 'posts'}}Posts{{/link-to}}
+          </li>
+          <li class="collection-item">
+            {{#link-to 'comments'}}Comments{{/link-to}}
+          </li>
 
-{{outlet}}
+      </ul>
+    </div>
+    <div class="col m10 s12">
+        {{outlet}}
+    </div>
+</div>

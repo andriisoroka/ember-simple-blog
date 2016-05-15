@@ -1,0 +1,23 @@
+<h1>Users</h1>
+{{#link-to 'add-uses' class="waves-effect waves-light btn"}}Add new{{/link-to}}
+<table class="striped">
+    <thead>
+    <tr>
+        <th data-field="id">ID</th>
+        <th data-field="name">Name</th>
+        <th data-field="price">Email</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#each model.users as | item|}}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+{{outlet}}

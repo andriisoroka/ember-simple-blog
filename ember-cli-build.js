@@ -6,6 +6,27 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
+  app.import('/bower_components/Materialize/dist/css/materialize.css');
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Regular.woff2',{
+    destDir: 'fonts/roboto'
+  });
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Regular.woff',{
+    destDir: 'fonts/roboto'
+  });
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Regular.ttf',{
+    destDir: 'fonts/roboto'
+  });
+
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Bold.woff2',{
+    destDir: 'fonts/roboto'
+  });
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Bold.woff',{
+    destDir: 'fonts/roboto'
+  });
+  app.import('/bower_components/Materialize/dist/fonts/roboto/Roboto-Bold.ttf',{
+    destDir: 'fonts/roboto'
+  });
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

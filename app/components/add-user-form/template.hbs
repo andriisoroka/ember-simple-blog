@@ -1,0 +1,9 @@
+<h2>Add new user</h2>
+{{#if errorMessage}}
+<p class=" card-panel red-text text-accent-4">{{errorMessage}}</p>
+{{/if}}
+{{input type="text" value=name placeholder="Name"}}
+{{input type="email" value=email placeholder="Email"}}
+{{input type="password" value=password placeholder="Password"}}
+<button {{action 'submit' name email password}}>Save</button>
+{{yield}}
